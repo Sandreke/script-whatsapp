@@ -1,0 +1,27 @@
+async function enviarScript(scriptText) {
+    const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
+    main = document.querySelector("#main"),
+        textarea = main.querySelector(`div[contenteditable="true"]`)
+
+    if (!textarea) throw new Error("No hay una conversación abierta")
+
+    for (const line of lines) {
+        console.log(line)
+
+        textarea.focus();
+        document.execCommand('insertText', false, line);
+        textarea.dispatchEvent(new Event('input', { bubbles: true }));
+
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        (main.querySelector(`[data-testid="send"]`) || main.querySelector(`[data-icon="send"]`)).click();
+
+        if (lines.indexOf(line) !== lines.length - 1) await new Promise(resolve => setTimeout(resolve, 250));
+    }
+
+    return lines.length;
+}
+
+enviarScript(`
+Sandreke
+`).then(e => console.log(`Código finalizado, ${e} mensajes enviados`)).catch(console.error)
