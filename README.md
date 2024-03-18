@@ -26,14 +26,14 @@ Este código utiliza los dos insumos anteriores para generar el output [script f
 ### 🧑‍💻 Formas de usarlo
 
 1. La primera forma es usar lo que ya se ha generado en [script final](https://github.com/Sandreke/script-whatsapp/blob/main/script_final.txt)
-  1.1. Copiar el contenido del archivo (resaltar unos caracteres -> crl + A -> ctrl + C)
-  1.2. En la caja de texto del chat de WhatsApp, darle click derecho e 'Inspeccionar'
-  1.3. Abrir la consola ("Console")
-  1.4. Pegar el contenido copiado y presionar enter
+*  1.1. Copiar el contenido del archivo (resaltar unos caracteres -> ctrl + A -> ctrl + C)
+*  1.2. En la caja de texto del chat de WhatsApp, darle click derecho e 'Inspeccionar'
+*  1.3. Abrir la consola ("Console")
+*  1.4. Pegar el contenido copiado y presionar 'enter'
 
 2. La segunda forma es generar el [script final](https://github.com/Sandreke/script-whatsapp/blob/main/script_final.txt) si es de tu interés generar un script nuevo, ya que el [código](https://github.com/Sandreke/script-whatsapp/blob/main/generar_script.py) contempla la lógica de aleatorizar el orden de los sonetos
-  2.1. Descargar los recursos y ejecutar el código
-  2.2. Repetir los pasos de la forma 1
+*  2.1. Descargar los recursos y ejecutar el código
+*  2.2. Repetir los pasos de la forma 1
 
 ### ✍️ Demo: [Video](https://www.instagram.com/p/C4jBSZFvZKF/) 
 
